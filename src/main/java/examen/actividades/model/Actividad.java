@@ -69,6 +69,12 @@ public abstract class Actividad {
          if(inscritos >= cupoTotal){
              throw new IllegalArgumentException("No hay cupos disponibles para esta actividad");
          }
+         inscritos++;
     }
+
+    public abstract double calcularTarifaFinal();
+
+    public abstract TipoActividad getTipo();
+
 
 }
